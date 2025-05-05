@@ -1,7 +1,7 @@
 # Backend Stack
 - Node Js
 - Express
-- Postgresql
+- Mysql
 - Sequelize ORM
 
 **Fully featured REST API E-Shop**
