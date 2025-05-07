@@ -2,7 +2,7 @@ import { Sequelize } from 'sequelize';
 import { configDotenv } from 'dotenv';
 
 // Loading env vars
-configDotenv({ path: '../.env' });
+configDotenv();
 
 const sequelize = new Sequelize({
     database: process.env.DB_NAME,

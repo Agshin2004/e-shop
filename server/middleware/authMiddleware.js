@@ -6,7 +6,9 @@ export default (req, res, next) => {
     }
 
     try {
-        console.log(req.headers);
+        // to /auth jwt will be sent with every request, this middleware will attach
+        // req.user for next middleware that is userController.check controller and that controller will
+        // create new jwt and send back to react client
         const token = req.headers.authorization.split(' ')[1];
         if (!token) {
             return res.status(401).json({ message: 'Token not found' });
